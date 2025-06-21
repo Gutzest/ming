@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional photography and media services specializing in portraits, weddings, events, and commercial photography. Capturing life's precious moments with artistic vision and technical excellence.">
+    <meta name="keywords" content="photographer, photography, media, portraits, weddings, events, commercial photography, photo sessions">
+    <meta name="author" content="Underneath Media">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Underneath Media - Capturing Life's Moments">
+    <meta property="og:description" content="Professional photography and media services specializing in portraits, weddings, events, and commercial photography. Capturing life's precious moments with artistic vision and technical excellence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://underneathmedia.com">
+    <meta property="og:image" content="https://underneathmedia.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Underneath Media - Capturing Life's Moments">
+    <meta name="twitter:description" content="Professional photography and media services specializing in portraits, weddings, events, and commercial photography. Capturing life's precious moments with artistic vision and technical excellence.">
+    <meta name="twitter:image" content="https://underneathemedia.com/images/twitter-image.jpg">
+    
+    <title>Underneath Media - Professional Photography Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📸%3C/text%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <i class="fas fa-camera"></i>
+                <span>Underneath Media</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <div class="language__toggle" id="language-toggle">
+                    <i class="fas fa-globe"></i>
+                    <span id="language-text">EN</span>
+                </div>
+                <div class="theme__toggle" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </div>
+                <div class="user__menu" id="user-menu">
+                    <button class="login__btn" id="login-btn">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </button>
+                    <div class="user__profile" id="user-profile" style="display: none;">
+                        <img class="profile__image" id="profile-image" src="" alt="Profile">
+                        <span class="profile__name" id="profile-name"></span>
+                        <div class="profile__dropdown" id="profile-dropdown">
+                            <button class="dropdown__item" id="upload-photos-btn">
+                                <i class="fas fa-camera"></i>
+                                Upload Photos
+                            </button>
+                            <button class="dropdown__item" id="my-photos-btn">
+                                <i class="fas fa-images"></i>
+                                My Photos
+                            </button>
+                            <button class="dropdown__item" id="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Capturing Life's
+                        <span class="hero__title-accent">Precious Moments</span>
+                    </h1>
+                    <p class="hero__description">
+                        Professional photographer specializing in portraits, weddings, events, and commercial photography. 
+                        Every moment tells a story, and I'm here to help you preserve yours with artistic vision and 
+                        technical excellence.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="button button--primary">Book a Session</a>
+                        <a href="#portfolio" class="button button--secondary">View Portfolio</a>
+                    </div>
+                </div>
+                
+                <div class="hero__image">
+                    <svg class="hero__svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background elements -->
+                        <circle cx="320" cy="80" r="60" fill="#4f46e5" opacity="0.1"/>
+                        <circle cx="80" cy="220" r="40" fill="#06b6d4" opacity="0.1"/>
+                        
+                        <!-- Camera body -->
+                        <rect x="100" y="120" width="200" height="120" rx="15" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+                        
+                        <!-- Camera lens -->
+                        <circle cx="200" cy="170" r="35" fill="#4a5568" stroke="#2d3748" stroke-width="3"/>
+                        <circle cx="200" cy="170" r="25" fill="#1a202c" stroke="#2d3748" stroke-width="2"/>
+                        <circle cx="200" cy="170" r="15" fill="#4f46e5" opacity="0.3"/>
+                        
+                        <!-- Camera details -->
+                        <rect x="110" y="130" width="30" height="15" rx="3" fill="#4f46e5"/>
+                        <rect x="110" y="150" width="20" height="8" rx="2" fill="#06b6d4"/>
+                        <circle cx="280" cy="140" r="8" fill="#10b981"/>
+                        
+                        <!-- Flash -->
+                        <rect x="250" y="125" width="40" height="20" rx="5" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1"/>
+                        
+                        <!-- Floating photo frames -->
+                        <rect x="50" y="60" width="60" height="45" rx="3" fill="white" stroke="#e2e8f0" stroke-width="2" transform="rotate(-10 80 82.5)"/>
+                        <rect x="55" y="65" width="50" height="30" rx="2" fill="#06b6d4" opacity="0.3"/>
+                        
+                        <rect x="290" y="200" width="60" height="45" rx="3" fill="white" stroke="#e2e8f0" stroke-width="2" transform="rotate(15 320 222.5)"/>
+                        <rect x="295" y="205" width="50" height="30" rx="2" fill="#10b981" opacity="0.3"/>
+                        
+                        <!-- Sparkle effects -->
+                        <path d="M350 50 L355 60 L365 55 L360 45 Z" fill="#f59e0b"/>
+                        <path d="M30 120 L35 130 L45 125 L40 115 Z" fill="#4f46e5"/>
+                        <path d="M370 180 L375 190 L385 185 L380 175 Z" fill="#06b6d4"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">My Portfolio</h2>
+                    <p class="section__description">
+                        A collection of my best work showcasing different photography styles and moments
+                    </p>
+                </div>
+                
+                <div class="portfolio__filters">
+                    <button class="filter__btn filter__btn--active" data-filter="all">All</button>
+                    <button class="filter__btn" data-filter="portrait">Portraits</button>
+                    <button class="filter__btn" data-filter="wedding">Weddings</button>
+                    <button class="filter__btn" data-filter="event">Events</button>
+                    <button class="filter__btn" data-filter="commercial">Commercial</button>
+                </div>
+                
+                <div class="portfolio__container grid">
+                    <article class="portfolio__item" data-category="portrait">
+                        <div class="portfolio__image">
+                            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="400" fill="#f1f5f9"/>
+                                <circle cx="150" cy="160" r="60" fill="#4f46e5" opacity="0.3"/>
+                                <rect x="120" y="220" width="60" height="80" rx="30" fill="#4f46e5" opacity="0.3"/>
+                                <text x="150" y="350" text-anchor="middle" font-family="Inter" font-size="14" fill="#64748b">Portrait Session</text>
+                            </svg>
+                            <div class="portfolio__overlay">
+                                <h3>Portrait Photography</h3>
+                                <p>Professional headshots and lifestyle portraits</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio__item" data-category="wedding">
+                        <div class="portfolio__image">
+                            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="400" fill="#fef3f2"/>
+                                <circle cx="120" cy="160" r="40" fill="#06b6d4" opacity="0.4"/>
+                                <circle cx="180" cy="160" r="40" fill="#10b981" opacity="0.4"/>
+                                <path d="M120 200 Q150 180 180 200" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                                <text x="150" y="350" text-anchor="middle" font-family="Inter" font-size="14" fill="#64748b">Wedding Day</text>
+                            </svg>
+                            <div class="portfolio__overlay">
+                                <h3>Wedding Photography</h3>
+                                <p>Capturing your special day with elegance</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio__item" data-category="event">
+                        <div class="portfolio__image">
+                            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="400" fill="#f0fdf4"/>
+                                <circle cx="100" cy="120" r="25" fill="#4f46e5" opacity="0.4"/>
+                                <circle cx="150" cy="140" r="30" fill="#06b6d4" opacity="0.4"/>
+                                <circle cx="200" cy="130" r="25" fill="#10b981" opacity="0.4"/>
+                                <path d="M50 250 Q150 200 250 250" stroke="#f59e0b" stroke-width="2" fill="none"/>
+                                <text x="150" y="350" text-anchor="middle" font-family="Inter" font-size="14" fill="#64748b">Corporate Event</text>
+                            </svg>
+                            <div class="portfolio__overlay">
+                                <h3>Event Photography</h3>
+                                <p>Corporate events and celebrations</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio__item" data-category="commercial">
+                        <div class="portfolio__image">
+                            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="400" fill="#fffbeb"/>
+                                <rect x="100" y="120" width="100" height="120" rx="10" fill="#4f46e5" opacity="0.3"/>
+                                <circle cx="150" cy="180" r="30" fill="#06b6d4" opacity="0.5"/>
+                                <path d="M125 160 L175 160 M125 180 L175 180 M125 200 L175 200" stroke="#10b981" stroke-width="2"/>
+                                <text x="150" y="350" text-anchor="middle" font-family="Inter" font-size="14" fill="#64748b">Product Shoot</text>
+                            </svg>
+                            <div class="portfolio__overlay">
+                                <h3>Commercial Photography</h3>
+                                <p>Product and brand photography</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio__item" data-category="portrait">
+                        <div class="portfolio__image">
+                            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="400" fill="#f8fafc"/>
+                                <circle cx="150" cy="150" r="50" fill="#10b981" opacity="0.4"/>
+                                <rect x="125" y="200" width="50" height="70" rx="25" fill="#10b981" opacity="0.4"/>
+                                <circle cx="120" cy="130" r="8" fill="#f59e0b"/>
+                                <circle cx="180" cy="130" r="8" fill="#f59e0b"/>
+                                <text x="150" y="350" text-anchor="middle" font-family="Inter" font-size="14" fill="#64748b">Family Portrait</text>
+                            </svg>
+                            <div class="portfolio__overlay">
+                                <h3>Family Photography</h3>
+                                <p>Beautiful family moments and memories</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio__item" data-category="wedding">
+                        <div class="portfolio__image">
+                            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="400" fill="#fdf2f8"/>
+                                <path d="M150 100 L180 140 L150 180 L120 140 Z" fill="#4f46e5" opacity="0.4"/>
+                                <circle cx="150" cy="140" r="20" fill="#06b6d4" opacity="0.6"/>
+                                <path d="M100 250 Q150 220 200 250" stroke="#10b981" stroke-width="4" fill="none"/>
+                                <text x="150" y="350" text-anchor="middle" font-family="Inter" font-size="14" fill="#64748b">Engagement</text>
+                            </svg>
+                            <div class="portfolio__overlay">
+                                <h3>Engagement Photos</h3>
+                                <p>Romantic and intimate couple sessions</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Photography Services</h2>
+                    <p class="section__description">
+                        Professional photography services tailored to capture your unique moments and vision
+                    </p>
+                </div>
+                
+                <div class="services__container grid">
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="service__title">Portrait Photography</h3>
+                        <p class="service__description">
+                            Professional headshots, lifestyle portraits, and personal branding photography 
+                            that showcase your unique personality and style.
+                        </p>
+                        <div class="service__price">Starting at $200</div>
+                    </article>
+                    
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="service__title">Wedding Photography</h3>
+                        <p class="service__description">
+                            Complete wedding day coverage including ceremony, reception, and getting ready. 
+                            Capturing every precious moment of your special day.
+                        </p>
+                        <div class="service__price">Starting at $1,500</div>
+                    </article>
+                    
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="service__title">Event Photography</h3>
+                        <p class="service__description">
+                            Corporate events, parties, conferences, and celebrations. 
+                            Professional documentation of your important gatherings.
+                        </p>
+                        <div class="service__price">Starting at $300</div>
+                    </article>
+                    
+                    <article class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="service__title">Commercial Photography</h3>
+                        <p class="service__description">
+                            Product photography, brand imaging, and marketing materials. 
+                            High-quality images that elevate your business presence.
+                        </p>
+                        <div class="service__price">Starting at $400</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__content">
+                    <div class="section__header">
+                        <h2 class="section__title">About Underneath Media</h2>
+                        <p class="section__description">
+                            Professional media company dedicated to capturing life's beautiful moments
+                        </p>
+                    </div>
+                    
+                    <p class="about__text">
+                        With over 8 years of experience in photography, I specialize in creating timeless images 
+                        that tell your unique story. My journey began with a simple love for capturing moments, 
+                        and has evolved into a passion for helping people preserve their most precious memories.
+                    </p>
+                    
+                    <p class="about__text">
+                        I believe that every moment has its own beauty and significance. Whether it's the joy of a 
+                        wedding day, the warmth of a family gathering, or the confidence in a professional portrait, 
+                        my goal is to capture the authentic emotions and create images that you'll treasure forever.
+                    </p>
+                    
+                    <div class="about__stats">
+                        <div class="stat">
+                            <h3 class="stat__number">300+</h3>
+                            <p class="stat__label">Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">150+</h3>
+                            <p class="stat__label">Weddings Captured</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">8+</h3>
+                            <p class="stat__label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about__image">
+                    <svg class="about__svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background -->
+                        <rect width="400" height="300" fill="#f8fafc"/>
+                        
+                        <!-- Photographer silhouette -->
+                        <circle cx="200" cy="120" r="40" fill="#4f46e5" opacity="0.3"/>
+                        <rect x="170" y="160" width="60" height="80" rx="30" fill="#4f46e5" opacity="0.3"/>
+                        
+                        <!-- Camera in hands -->
+                        <rect x="180" y="180" width="40" height="25" rx="5" fill="#2d3748"/>
+                        <circle cx="200" cy="192" r="8" fill="#4a5568"/>
+                        <circle cx="200" cy="192" r="5" fill="#1a202c"/>
+                        
+                        <!-- Photo frames floating around -->
+                        <rect x="50" y="80" width="60" height="45" rx="3" fill="white" stroke="#e2e8f0" stroke-width="2" transform="rotate(-15 80 102.5)"/>
+                        <rect x="55" y="85" width="50" height="35" rx="2" fill="#06b6d4" opacity="0.3"/>
+                        
+                        <rect x="290" y="60" width="60" height="45" rx="3" fill="white" stroke="#e2e8f0" stroke-width="2" transform="rotate(10 320 82.5)"/>
+                        <rect x="295" y="65" width="50" height="35" rx="2" fill="#10b981" opacity="0.3"/>
+                        
+                        <rect x="70" y="200" width="60" height="45" rx="3" fill="white" stroke="#e2e8f0" stroke-width="2" transform="rotate(-5 100 222.5)"/>
+                        <rect x="75" y="205" width="50" height="35" rx="2" fill="#f59e0b" opacity="0.3"/>
+                        
+                        <rect x="310" y="180" width="60" height="45" rx="3" fill="white" stroke="#e2e8f0" stroke-width="2" transform="rotate(20 340 202.5)"/>
+                        <rect x="315" y="185" width="50" height="35" rx="2" fill="#8b5cf6" opacity="0.3"/>
+                        
+                        <!-- Light rays -->
+                        <path d="M200 80 L200 100 M190 85 L210 95 M210 85 L190 95" stroke="#f59e0b" stroke-width="2" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="cta__container container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Capture Your Moments?</h2>
+                    <p class="cta__description">
+                        Let's create beautiful memories together. Whether it's a special event, professional headshots, 
+                        or your wedding day, I'm here to capture every precious moment with artistry and care.
+                    </p>
+                    <div class="cta__buttons">
+                        <a href="#contact" class="button button--primary button--large">Book Your Session</a>
+                        <a href="tel:+1234567890" class="button button--secondary button--large">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__description">
+                        Ready to capture your special moments? Send us a message and we'll get back to you within 24 hours.
+                    </p>
+                </div>
+                
+                <div class="contact__container grid">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+                            <h3 class="contact__title">Location</h3>
+                            <p class="contact__text">123 Innovation Drive<br>Tech City, TC 12345</p>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="fas fa-phone contact__icon"></i>
+                            <h3 class="contact__title">Phone</h3>
+                            <p class="contact__text">+1 (555) 123-4567</p>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="fas fa-envelope contact__icon"></i>
+                            <h3 class="contact__title">Email</h3>
+                            <p class="contact__text">hello@underneathmedia.com</p>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="fas fa-clock contact__icon"></i>
+                            <h3 class="contact__title">Working Hours</h3>
+                            <p class="contact__text">Mon-Sat: 9AM-6PM<br>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form-container">
+                        <form class="contact__form" id="contact-form" action="https://formspree.io/f/xdkovnql" method="POST">
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="contact-name">Full Name *</label>
+                                    <input type="text" id="contact-name" name="name" required>
+                                </div>
+                                <div class="form__group">
+                                    <label for="contact-email">Email *</label>
+                                    <input type="email" id="contact-email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="contact-phone">Phone</label>
+                                    <input type="tel" id="contact-phone" name="phone">
+                                </div>
+                                <div class="form__group">
+                                    <label for="contact-service">Service Type</label>
+                                    <select id="contact-service" name="service">
+                                        <option value="">Select Service</option>
+                                        <option value="portrait">Portrait Photography</option>
+                                        <option value="wedding">Wedding Photography</option>
+                                        <option value="event">Event Photography</option>
+                                        <option value="commercial">Commercial Photography</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="contact-subject">Subject *</label>
+                                <input type="text" id="contact-subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" rows="6" required placeholder="Tell us about your project, preferred dates, and any specific requirements..."></textarea>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="contact-budget">Budget Range</label>
+                                <select id="contact-budget" name="budget">
+                                    <option value="">Select Budget Range</option>
+                                    <option value="under-500">Under $500</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2500">$1,000 - $2,500</option>
+                                    <option value="2500-5000">$2,500 - $5,000</option>
+                                    <option value="over-5000">Over $5,000</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="button button--primary contact__submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                            
+                            <div class="contact__status" id="contact-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login/Register Modal -->
+    <div class="auth__modal" id="auth-modal">
+        <div class="auth__overlay" id="auth-overlay"></div>
+        <div class="auth__content">
+            <div class="auth__header">
+                <h2 id="auth-title">Login</h2>
+                <button class="auth__close" id="auth-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="auth__body">
+                <!-- Login Form -->
+                <form class="auth__form" id="login-form">
+                    <div class="form__group">
+                        <label for="login-username">Username or Email</label>
+                        <input type="text" id="login-username" name="username" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" class="button button--primary">Login</button>
+                    <p class="auth__switch">
+                    </p>
+                </form>
+
+                <!-- Register Form -->
+                <form class="auth__form" id="register-form" style="display: none;">
+                    <div class="form__group">
+                        <label for="register-username">Username</label>
+                        <input type="text" id="register-username" name="username" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" name="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="register-fullname">Full Name</label>
+                        <input type="text" id="register-fullname" name="fullName">
+                    </div>
+                    <div class="form__group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" name="password" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="register-confirm">Confirm Password</label>
+                        <input type="password" id="register-confirm" name="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="button button--primary">Register</button>
+                    <p class="auth__switch">
+                        Already have an account? 
+                        <button type="button" class="auth__link" id="show-login">Login here</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Upload Modal -->
+    <div class="upload__modal" id="upload-modal">
+        <div class="upload__overlay" id="upload-overlay"></div>
+        <div class="upload__content">
+            <div class="upload__header">
+                <h2>Upload Photos</h2>
+                <button class="upload__close" id="upload-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="upload__body">
+                <form id="photo-upload-form" enctype="multipart/form-data">
+                    <div class="form__group">
+                        <label for="photo-category">Category</label>
+                        <select id="photo-category" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="portrait">Portrait</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="event">Event</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="photo-title">Title (Optional)</label>
+                        <input type="text" id="photo-title" name="title" placeholder="Photo title">
+                    </div>
+                    <div class="form__group">
+                        <label for="photo-description">Description (Optional)</label>
+                        <textarea id="photo-description" name="description" placeholder="Photo description"></textarea>
+                    </div>
+                    <div class="form__group">
+                        <label for="photo-privacy">Privacy Setting</label>
+                        <select id="photo-privacy" name="privacy" required>
+                            <option value="public">Public - Show in portfolio for everyone</option>
+                            <option value="private">Private - Only visible to me</option>
+                        </select>
+                    </div>
+                    <div class="upload__area" id="upload-drop-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag and drop photos here or click to select</p>
+                        <input type="file" id="photo-files" name="photo" accept="image/*" multiple>
+                    </div>
+                    <div class="upload__preview" id="photo-preview"></div>
+                    <div class="upload__actions">
+                        <button type="button" class="button button--secondary" id="cancel-upload">Cancel</button>
+                        <button type="submit" class="button button--primary" id="submit-upload">Upload Photos</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer__container container">
+            <div class="footer__content grid">
+                <div class="footer__section">
+                    <a href="#home" class="footer__logo">
+                        <i class="fas fa-camera"></i>
+                        <span>Underneath Media</span>
+                    </a>
+                    <p class="footer__description">
+                        Professional media company capturing life's precious moments with artistic vision 
+                        and technical excellence. Let's create beautiful memories together.
+                    </p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Photography Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="#services" class="footer__link">Portrait Photography</a></li>
+                        <li><a href="#services" class="footer__link">Wedding Photography</a></li>
+                        <li><a href="#services" class="footer__link">Event Photography</a></li>
+                        <li><a href="#services" class="footer__link">Commercial Photography</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact Info</h3>
+                    <div class="footer__contact">
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Innovation Drive, Tech City, TC 12345</span>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@innovatecorp.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__social">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 InnovateCorp. All rights reserved. | 
+                    <a href="#" class="footer__link">Privacy Policy</a> | 
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top" id="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
